@@ -44,4 +44,4 @@ def handle_message(data):
         emit('message', {'error': 'Target client ID not found'}, room=request.sid)
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    socketio.run(app, port=5001, debug=True)
