@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSocket Client</title>
+  <style>
+    .message {
+      border: 1px solid #ccc;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .sent {
+      background-color: #e0f7fa;
+      text-align: right;
+    }
+    .received {
+      background-color: #ffecb3;
+    }
+  </style>
+</head>
+<body>
+  <h1>WebSocket Client</h1>
+  <div id="status">Connecting...</div>
+  <div id="client-id">Client ID: N/A</div>
+  <div id="messages">
+    <h2>Messages</h2>
+    <ul id="messages-list"></ul>
+  </div>
+  <div id="send-message">
+    <h2>Send Message</h2>
+    <form id="message-form">
+      <label for="target-client-id">Target Client ID:</label>
+      <input type="text" id="target-client-id" required>
+      <label for="message-content">Message:</label>
+      <input type="text" id="message-content" required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+  <script>
+    const socket = io();
+    const statusDiv = document.getElementById('status');
+    const clientIdDiv = document.getElementById('client-id');
+    const messagesList = document.getElementById('messages-list');
+    const messageForm = document.getElementById('message-form');
+    const targetClientIdInput = document.getElementById('target-client-id');
+    const messageContentInput = document.getElementById('message-content');
+
+    let clientId = null;
+
+    socket.on('connect', () => {
+      statusDiv.textContent = 'Connected to the WebSocket server';
+    });
+
+    socket.on('client_id', (data) => {
+      clientId = data.clientId;
+      clientIdDiv.textContent = `Client ID: ${clientId}`;
+    });
+
+    socket.on('message', (message) => {
+      if (message.error) {
+        alert(`Error: ${message.error}`);
+      } else {
+        const listItem = document.createElement('li');
+        listItem.classList.add('message', 'received');
+        listItem.innerHTML = `<strong>From ${message.from}</strong>: ${message.content}`;
+        messagesList.appendChild(listItem);
+      }
+    });
+
+    socket.on('disconnect', () => {
+      statusDiv.textContent = 'Disconnected from the WebSocket server';
+    });
+
+    socket.on('connect_error', (error) => {
+      console.error('WebSocket error:', error);
+      statusDiv.textContent = 'Error occurred. Check console for details.';
+    });
+
+    messageForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const targetClientId = targetClientIdInput.value;
+      const messageContent = messageContentInput.value;
+      const message = {
+        targetClientId: targetClientId,
+        from: clientId,
+        message: messageContent
+      };
+
+      const listItem = document.createElement('li');
+      listItem.classList.add('message', 'sent');
+      listItem.innerHTML = `<strong>To ${targetClientId}</strong>: ${messageContent}`;
+      messagesList.appendChild(listItem);
+      
+      socket.send(message);
+    });
+  </script>
+</body>
+</html>
