@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" modified="2024-05-25T14:30:31.566Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="SdKciG1qiWRPDjYZUzXu" version="24.4.8" type="device">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="866" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-2" target="IaaBdmKqx7iMcMQMVTat-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-2" value="&lt;div&gt;Inbound Call to&lt;/div&gt;&lt;div&gt;Vonage Virtual Number&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="275" y="140" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-3" target="IaaBdmKqx7iMcMQMVTat-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-3" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="325" y="30" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-5" target="IaaBdmKqx7iMcMQMVTat-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-5" value="&lt;div&gt;Vonage Routes Call&lt;/div&gt;&lt;div&gt;to Answer Webhook&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#4d9900&quot;&gt;router:&lt;/font&gt; (/webhooks/answer)&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#cc6600&quot;&gt;func:&lt;/font&gt; answer_url&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="275" y="250" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-10" target="IaaBdmKqx7iMcMQMVTat-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-10" value="UUID Stored in Dictionary for&#xa;Active Connections" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="275" y="360" width="210" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-15" target="IaaBdmKqx7iMcMQMVTat-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-15" target="IaaBdmKqx7iMcMQMVTat-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-15" value="Application Checks&#xa;Caller in Database" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="295" y="470" width="170" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-17" target="IaaBdmKqx7iMcMQMVTat-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-17" value="Retrieve Caller&#xa;Info and Prepare&#xa;Response NCCO" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="80" y="630" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-19" target="IaaBdmKqx7iMcMQMVTat-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-19" value="Handle Unknown &#xa;Caller" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="500" y="630" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-21" value="True" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="180" y="510" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-22" value="False" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="500" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-23" target="IaaBdmKqx7iMcMQMVTat-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-23" value="Application Responds&#xa;with NCCO Actions&#xa;(e.g., connect, talk,websocket)" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="67.5" y="740" width="195" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-25" target="IaaBdmKqx7iMcMQMVTat-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-25" value="Application Responds&#xa;with Default NCCO&#xa;(e.g., play message)" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="492.5" y="740" width="195" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-27" value="&lt;div&gt;Call Actions Executed&lt;/div&gt;&lt;div&gt;(e.g., call connected,&lt;/div&gt;&lt;div&gt;message played)&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="67.5" y="860" width="195" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-28" target="IaaBdmKqx7iMcMQMVTat-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-28" value="Call End" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="496.25" y="860" width="187.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-31" target="IaaBdmKqx7iMcMQMVTat-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" target="IaaBdmKqx7iMcMQMVTat-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="589.9411764705881" y="1044.9999999999998" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-35" target="IaaBdmKqx7iMcMQMVTat-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-35" value="Event Webhook Receives&lt;br&gt;Status&lt;br&gt;(e.g., call ended)&lt;br&gt;&lt;font color=&quot;#009900&quot;&gt;router:&lt;/font&gt; (/webhooks/event)&lt;br&gt;&lt;font color=&quot;#cc6600&quot;&gt;func:&lt;/font&gt; event_callback" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="491.25" y="960" width="197.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-40" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=120;indent=100;dashed=1;dashPattern=8 8;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="20" y="960" width="300" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-38" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="535" y="1100" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-31" target="IaaBdmKqx7iMcMQMVTat-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-31" target="IaaBdmKqx7iMcMQMVTat-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-31" value="&lt;div&gt;&lt;div&gt;WebSocket Interaction&lt;/div&gt;&lt;div&gt;(send/receive data, play audio)&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#cc6600&quot;&gt;Func:&lt;/font&gt; speech_to_text&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#cc6600&quot;&gt;Func:&lt;/font&gt; text_to_speech&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="67.5" y="980" width="195" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-34" target="IaaBdmKqx7iMcMQMVTat-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-34" value="&lt;div&gt;Event Webhook Receives&lt;/div&gt;&lt;div&gt;Status Updates&lt;/div&gt;&lt;div&gt;(e.g., call started, call ended)&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#009900&quot;&gt;router:&lt;/font&gt; (/webhooks/event)&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#cc6600&quot;&gt;func:&lt;/font&gt; event_callback&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="68.75" y="1100" width="192.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-43" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="110" y="1250" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-46" value="Repeat Process" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontColor=#000099;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="262.5" y="965" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="IaaBdmKqx7iMcMQMVTat-27" target="IaaBdmKqx7iMcMQMVTat-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IaaBdmKqx7iMcMQMVTat-60" value="OpenAI&lt;div&gt;audio to text&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="340" y="1060" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
